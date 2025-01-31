@@ -1,27 +1,38 @@
+print("Welcome to The Bank of Zed, we're excited you're looking to open an account!")
+name = input("What's your name? ")
+age = input("Hello " + name + ", when was your birthday? ")
+print("It's very nice to meet you " + name + "!")
+def display_menu():
+    print("\n **The Bank of Zed**")
+    print("1: Personal Checking")
+    print("2: Personal Savings")
+    print("3: Custodial Checking")
+    print("4: Custodial Savings")
+    print("5: exit")
 
-"""
-    Welcome to Elite 101 this program is a starter for your chatbot project.
-    The starter prompts the user to enter their name and then greets them with a personalized message.
+def user_selection():
+    while(True):
+        display_menu()
+        number = str(input("\nEnter a number 1-5: "))
+        if(number == "1"):
+            print("\nLets get started on your personal checking account!")
+            valid_id = input("Do you have a valid id (State issued id or license)? ")
+            if(valid_id):
+                print("nnnn")
+        elif(number == "2"):
+            print("\nLets get started on your personal savings account!")
 
-    Functions:
-        get_user_name(): Prompts the user to enter their name and returns it.
-        greet_user(name): Prints a greeting message using the provided name.
-        main(): Main function that orchestrates the user input and greeting process.
+        elif(number == "3"):
+            print("\nLets get started on your custodial checking account!")
 
-    Execution:
-        When the script is run directly (not imported as a module), it will execute the main() function.
-"""
+        elif(number == "4"):
+            print("\nLets get started on your custodial savings account!")
 
+        elif(number == "5"):
+            print("\nend")
+            print("Thank you for chatting, see you next time!")
+            break
+        else:
+            print("\nnot valid input, enter number 1-5")
 
-def get_user_name():
-    return input("Please enter your name: ")
-
-def greet_user(name):
-    print(f"Hello, {name}!")
-
-def main():
-    user_name = get_user_name()
-    greet_user(user_name)
-
-if __name__ == "__main__":
-    main()
+user_selection()
