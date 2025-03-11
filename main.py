@@ -26,13 +26,8 @@ print("It's very nice to meet you " + name + "!")
 print(calculateAge(y,m,d))
 
 def display_menu():
-    print("\n  
- ______   __  __     ______        ______     ______     __   __     __  __        ______     ______      ______     ______     _____    
-/\__  _\ /\ \_\ \   /\  ___\      /\  == \   /\  __ \   /\ "-.\ \   /\ \/ /       /\  __ \   /\  ___\    /\___  \   /\  ___\   /\  __-.  
-\/_/\ \/ \ \  __ \  \ \  __\      \ \  __<   \ \  __ \  \ \ \-.  \  \ \  _"-.     \ \ \/\ \  \ \  __\    \/_/  /__  \ \  __\   \ \ \/\ \ 
-   \ \_\  \ \_\ \_\  \ \_____\     \ \_____\  \ \_\ \_\  \ \_\\"\_\  \ \_\ \_\     \ \_____\  \ \_\        /\_____\  \ \_____\  \ \____- 
-    \/_/   \/_/\/_/   \/_____/      \/_____/   \/_/\/_/   \/_/ \/_/   \/_/\/_/      \/_____/   \/_/        \/_____/   \/_____/   \/____/")
-    print("1: Personal Checking")
+    print("\n **The Bank of Zed**")
+    print("1: Personal Checkings")
     print("2: Personal Savings")
     print("3: Custodial Checking")
     print("4: Custodial Savings")
@@ -46,8 +41,9 @@ def user_selection():
         if(number == "1"):
             print("\nLets get started on your personal checking account!")
             valid_id = input("Do you have a valid id (State issued id or license)? ")
-            if(valid_id):
+            if(valid_id == "yes"):
                 print("If you have a check to deposit we can get started right away!")
+                break
             else:
                 print("Come back with an id! See you soon!")
                 break
@@ -56,6 +52,7 @@ def user_selection():
             valid_id = input("Do you have a valid id (State issued id or license)? ")
             if(valid_id):
                 print("If you have a check to deposit we can get started right away!")
+                break
             else:
                 print("Come back with an id! See you soon!")
                 break
@@ -64,6 +61,7 @@ def user_selection():
             valid_id = input("Do you have a valid id (State issued id or license)? ")
             if(valid_id):
                 print("If you have a check to deposit we can get started right away!")
+                break
             else:
                 print("Come back with an id! See you soon!")
                 break
@@ -73,6 +71,7 @@ def user_selection():
             valid_id = input("Do you have a valid id (State issued id or license)? ")
             if(valid_id):
                 print("If you have a check to deposit we can get started right away!")
+                break
             else:
                 print("Come back with an id! See you soon!")
                 break
